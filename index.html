@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game API&OOP</title>
+    <link rel="shortcut icon" href="media/joystick.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="intro">
+      <img src="media/wraper.png" alt="intro photo" class="w-100" />
+    </div>
+    <div class="w-100 m-0 p-0 big">
+      <nav
+        class="navbar navbar-expand-lg w-75 mx-auto rounded-4 px-1 w-r-100 w-r-90"
+        id="navMove"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="media/nav icon1.png"
+              alt="Bootstrap"
+              width="30"
+              height="30"
+            />
+            <span class="fw-bold fs-5 fs-r-6">GAME REVIEWS</span>
+          </a>
+          <span
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars text-light"></i>
+          </span>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-game="mmorpg"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-game="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-game="sailing">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-game="permadeath"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-game="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-game="pixel">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="w-85 mx-auto">
+        <div class="w-100 row g-2 my-4" id="showData"></div>
+      </div>
+    </div>
+    <div class="details d-none" id="showDetails"></div>
+    <div class="loading d-flex justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
