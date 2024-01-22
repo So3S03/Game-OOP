@@ -34,7 +34,9 @@ export class GetData {
         </div>`
         });
         showData.innerHTML = temp1
-        loadingPage.style.display = `none`
+        $(loadingPage).fadeOut(2000, function () {
+            $(loadingPage).removeClass("d-flex");
+        })
         let detailsData = new Details();
         detailsData.display()
     }

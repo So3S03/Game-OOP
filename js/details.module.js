@@ -70,7 +70,9 @@ export class Details {
                 closeBtn.addEventListener("click", () => {
                     details.classList.add("d-none")
                 })
-                loadingPage.style.display = "none"
+                $(loadingPage).fadeOut(2000, function () {
+                    $(loadingPage).removeClass("d-flex");
+                })
             })
         })
 
